@@ -778,6 +778,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -794,12 +798,6 @@ video {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(2px * var(--tw-divide-x-reverse));
   border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
 }
 
 .divide-verde-800 > :not([hidden]) ~ :not([hidden]) {
@@ -867,11 +865,6 @@ video {
 .border-verde-800 {
   --tw-border-opacity: 1;
   border-color: rgb(22 40 31 / var(--tw-border-opacity, 1));
-}
-
-.border-verde-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 28 21 / var(--tw-border-opacity, 1));
 }
 
 .bg-verde-300 {
@@ -965,14 +958,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-4 {
@@ -1184,6 +1177,11 @@ video {
   transition-duration: 150ms;
 }
 
+.hover\:text-verde-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(145 238 119 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1235,6 +1233,18 @@ video {
 @media not all and (min-width: 640px) {
   .max-sm\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-sm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .max-sm\:gap-4 {
+    gap: 1rem;
   }
 
   .max-sm\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1291,12 +1301,12 @@ video {
     gap: 2rem;
   }
 
-  .sm\:rounded-full {
-    border-radius: 9999px;
+  .sm\:justify-self-end {
+    justify-self: end;
   }
 
-  .sm\:border-2 {
-    border-width: 2px;
+  .sm\:rounded-full {
+    border-radius: 9999px;
   }
 
   .sm\:border-b-2 {
@@ -1312,14 +1322,13 @@ video {
     border-color: rgb(15 28 21 / var(--tw-border-opacity, 1));
   }
 
-  .sm\:border-l-verde-900 {
-    --tw-border-opacity: 1;
-    border-left-color: rgb(15 28 21 / var(--tw-border-opacity, 1));
-  }
-
   .sm\:bg-verde-950 {
     --tw-bg-opacity: 1;
     background-color: rgb(3 5 4 / var(--tw-bg-opacity, 1));
+  }
+
+  .sm\:p-12 {
+    padding: 3rem;
   }
 
   .sm\:p-8 {
