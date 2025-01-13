@@ -211,5 +211,80 @@
 
 
   </section>
+
+  <!-- contato -->
+  <section id="contato" class="container mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8">
+    <div>
+      <h1 class="font-serif text-4xl text-verde-300 mb-4">Nossos contatos</h1>
+      <p class="text-gray-200 text-balance mb-8">tem interesse em passar uma temporada na Forest? Entre em contato com a gente por telefone ou e-mail.</p>
+      
+      <div class="grid gap-4">
+        <div>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+          <h2 class="mb-2 text-2xl text-verde-300 font-serif">Base</h2>
+          <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</p>
+        </div>
+        
+        <div>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+          <h2 class="mb-2 text-2xl text-verde-300 font-serif">Email</h2>
+          <p class="text-gray-300">contato@forest.com</p>
+        </div>
+        
+        <div>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+          <h2 class="mb-2 text-2xl text-verde-300 font-serif">Telefone</h2>
+          <p class="text-gray-300">(21) 99999-9999</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="grid gap-4 rounded-xl bg-verde-900 shadow-2xl p-4 lg:p-8">
+      <div class="grid">
+        <label class="text-white" for="nome">Nome</label>
+        <input id="nome" name="nome" class="rounded-md border-2 border-verde-800 bg-verde-800 p-1 
+          text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-l-verde-900
+            placeholder:text-verde-900" type="text">
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div class="grid gap-1">
+          <label class="text-white" for="email">E-mail</label>
+          <input id="email" name="email" class="rounded-md border-2 border-verde-800 bg-verde-800 p-1 
+            text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-l-verde-900
+              placeholder:text-verde-900" type="text" type="email">
+        </div>
+        
+        <div class="grid gap-1">
+          <label class="text-white" for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" class="rounded-md border-2 border-verde-800 bg-verde-800 p-1 
+            text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-l-verde-900
+              placeholder:text-verde-900" type="text">
+        </div>
+      </div>
+      
+      <div class="grid gap-1">
+        <label class="text-white" for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" class="rounded-md border-2 border-verde-800 bg-verde-800 p-1 
+          text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-l-verde-900
+            placeholder:text-verde-900 resize-none" type="text"></textarea>
+      </div>
+      
+      <button class="place-self-start bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full">Enviar e-mail</button>
+    </form>
+  </section>
+
+  <!-- paceiros -->
+  <section class="container mb-12 sm:mb-16">
+    <ul class="flex flex-col items-center py-4 max-sm:divide-y-2 *:p-4 divide-verde-900 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-verde-900 sm:py-8 *:*:max-h-8 justify-between ">
+      <li><img src="./img/parceiros/caravan.svg" alt=""></li>
+      <li><img src="./img/parceiros/dogs.svg" alt=""></li>
+      <li><img src="./img/parceiros/lescone.svg" alt=""></li>
+      <li><img src="./img/parceiros/surfbot.svg" alt=""></li>
+      <li><img src="./img/parceiros/wildbeast.svg" alt=""></li>
+    </ul>
+  </section>
+
+
 </body>
 </html>
