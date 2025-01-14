@@ -48,7 +48,9 @@
 
   <main class="container">
     <div class="text-white relative px-8 pb-8 pt-64 rounded-2xl overflow-hidden bg-gradient-to-t from-verde-950/80 max-sm:pt-12 max-sm:px-4">
-      <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="Floresta">
+      <!-- <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="Floresta"> -->
+      <video id="video" width="1280" height="720" muted autoplay playsinline loop  class="animate-fade-in absolute inset-0 size-full object-cover -z-10" ></video>
+      
       <div class="bg-verde-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8
       sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-verde-950  sm:inline-flex sm:flex-row  sm:rounded-full ">
         Vagas para dezembro abertas
@@ -333,6 +335,20 @@
   </footer>
 
   <script>
+    const video = document.getElementById('video');
+    const temperatura = document.getElementById('temperatura');
+    const tempo = document.getElementById('tempo');
+    const dia = document.getElementById('dia');
+
+    const random = Math.floor(Math.random() * 10) + 20;
+    temperatura.innerText = `${random}°`;
+    tempo.innerText = random < 25 ? `🌧️ ${random + 5}%` : '🌤️';
+
+    const date = new Date();
+    dia.innerText = date.toLocaleDateString('pt-BR', { weekday: 'long' });
+
+    video.src = random < 25 ? './img/video_chuva.mp4' : './img/video_sol.mp4';
+    
     const mobileButton = document.getElementById('mobile-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
